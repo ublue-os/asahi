@@ -1,4 +1,4 @@
-name: ublue main 40
+name: ublue asahi 40
 on:
   pull_request:
   merge_group:
