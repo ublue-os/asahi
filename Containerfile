@@ -4,6 +4,8 @@ ARG SOURCE_ORG="${SOURCE_ORG:-travier-redhat}"
 ARG BASE_IMAGE="quay.io/${SOURCE_ORG}/${SOURCE_IMAGE}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-40}"
 
+FROM ghcr.io/ublue-os/config:latest as config
+
 FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION}
 
 COPY github-release-install.sh \
@@ -12,6 +14,8 @@ COPY github-release-install.sh \
      packages.sh \
      packages.json \
        /tmp/
+
+COPY --from=config /rpms /tmp/rpms
 
 ARG IMAGE_NAME="${IMAGE_NAME:-silverblue}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-40}"
