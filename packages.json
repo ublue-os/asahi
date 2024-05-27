@@ -1,0 +1,92 @@
+{
+    "all": {
+        "include": {
+            "all": [
+                "alsa-firmware",
+                "android-udev-rules",
+                "apr",
+                "apr-util",
+                "distrobox",
+                "ffmpeg",
+                "ffmpeg-libs",
+                "ffmpegthumbnailer",
+                "fzf",
+                "google-noto-sans-balinese-fonts",
+                "google-noto-sans-cjk-fonts",
+                "google-noto-sans-javanese-fonts",
+                "google-noto-sans-sundanese-fonts",
+                "grub2-tools-extra",
+                "heif-pixbuf-loader",
+                "htop",
+                "just",
+                "kernel-tools",
+                "libheif-freeworld",
+                "libheif-tools",
+                "libratbag-ratbagd",
+                "lshw",
+                "net-tools",
+                "nvme-cli",
+                "nvtop",
+                "openrgb-udev-rules",
+                "openssl",
+                "oversteer-udev",
+                "pam-u2f",
+                "pam_yubico",
+                "pamu2fcfg",
+                "pipewire-codec-aptx",
+                "powerstat",
+                "smartmontools",
+                "solaar-udev",
+                "symlinks",
+                "tcpdump",
+                "tmux",
+                "traceroute",
+                "vim",
+                "wireguard-tools",
+                "zstd"
+            ],
+            "silverblue": [
+                "adw-gtk3-theme",
+                "gnome-epub-thumbnailer",
+                "gnome-tweaks",
+                "gvfs-nfs"
+            ],
+            "kinoite": [
+                "icoutils",
+                "kate",
+                "kcron",
+                "kio-admin",
+                "ksshaskpass"
+            ]
+        },
+        "exclude": {
+            "all": [
+                "ffmpeg-free",
+                "google-noto-sans-cjk-vf-fonts",
+                "libavcodec-free",
+                "libavdevice-free",
+                "libavfilter-free",
+                "libavformat-free",
+                "libavutil-free",
+                "libpostproc-free",
+                "libswresample-free",
+                "libswscale-free"
+            ],
+            "kinoite": [
+                "ffmpegthumbnailer",
+                "plasma-discover-rpm-ostree"
+            ]
+        }
+    },
+    "40": {
+        "include": {
+            "all": [],
+            "kinoite": []
+        },
+        "exclude": {
+            "all": [
+                "default-fonts-cjk-sans"
+            ]
+        }
+    }
+}

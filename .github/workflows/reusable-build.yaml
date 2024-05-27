@@ -168,6 +168,7 @@ jobs:
             SOURCE_ORG=${{ env.SOURCE_ORG }}
             SOURCE_IMAGE=${{ env.SOURCE_IMAGE }}
             FEDORA_MAJOR_VERSION=${{ matrix.fedora_version }}
+            RPMFUSION_MIRROR=${{ vars.RPMFUSION_MIRROR }}
           labels: ${{ steps.meta.outputs.labels }}
           platforms: "linux/aarch64"
           oci: false
