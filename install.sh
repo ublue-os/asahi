@@ -13,7 +13,9 @@ curl -Lo /tmp/rpms/rpmfusion-free-release-${RELEASE}.noarch.rpm ${RPMFUSION_MIRR
 curl -Lo /tmp/rpms/rpmfusion-nonfree-release-${RELEASE}.noarch.rpm ${RPMFUSION_MIRROR_RPMS}/nonfree/fedora/rpmfusion-nonfree-release-${RELEASE}.noarch.rpm
 
 curl -Lo /etc/yum.repos.d/_copr_ublue-os_staging.repo https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-${RELEASE}/ublue-os-staging-fedora-${RELEASE}.repo
-curl -Lo /etc/yum.repos.d/_copr_kylegospo_oversteer.repo https://copr.fedorainfracloud.org/coprs/kylegospo/oversteer/repo/fedora-${RELEASE}/kylegospo-oversteer-fedora-${RELEASE}.repo
+
+# Remove oversteer until it supports aarch64
+#curl -Lo /etc/yum.repos.d/_copr_kylegospo_oversteer.repo https://copr.fedorainfracloud.org/coprs/kylegospo/oversteer/repo/fedora-${RELEASE}/kylegospo-oversteer-fedora-${RELEASE}.repo
 
 rpm-ostree install \
     /tmp/rpms/*.rpm \
